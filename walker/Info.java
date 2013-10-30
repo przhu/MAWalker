@@ -48,6 +48,7 @@ public class Info {
 	public int pointToAdd = 0;
 	public int apUp = 0;
 	public int bcUp = 0;
+	public long money = 0;
 	
 	/**
 	 * 优先进行妖精战
@@ -58,9 +59,9 @@ public class Info {
 	 */
 	public static boolean AllowBCInsuffient = false;
 	/**
-	 * 只走cost1的图
+	 * 设置最低跑图AP
 	 */
-	public static boolean OneAPOnly = false;
+	public static int ThisAPOnly = -1;
 	/**
 	 * 自动加点
 	 */
@@ -115,6 +116,7 @@ public class Info {
 	// area
 	public Hashtable<Integer,Area> area;
 	public boolean InnerMap = false;
+	public int MinMapAP = Integer.MAX_VALUE;
 	
 	
 	// floor
