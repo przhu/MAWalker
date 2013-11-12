@@ -83,6 +83,11 @@ public class Info {
 	 * 自动收集妖精战礼物
 	 */
 	public static boolean receiveBattlePresent = true;
+
+	/**
+	 * 骑士团战斗标记
+	 */
+	public boolean GuildBattleFlag = false;
 	
 	// 吃药相关的开关
 	public static boolean autoUseAp = true;
