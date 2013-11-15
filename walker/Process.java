@@ -96,7 +96,7 @@ public class Process {
 				result.add(Action.PRIVATE_FAIRY_BATTLE);
 				break;
 			case fairyReward:
-				if (info.ticket > 10) {
+				if (info.ticket > 15) {
 					result.add(Action.GUILD_TOP);
 				} else if (info.ticket < 0) {
 					Go.log("Keep reward");
@@ -124,7 +124,7 @@ public class Process {
 				if(info.gfairy.Spp.equals("使用BC3％回復")) {
 					result.add(Action.GUILD_BATTLE);
 					info.GuildBattleFlag = true;
-				} else if (info.ticket >= 15) {
+				} else if (info.ticket >= 5) {
 					result.add(Action.GUILD_BATTLE);
 				} else if (info.GuildBattleFlag) {
 					result.add(Action.GUILD_BATTLE);
